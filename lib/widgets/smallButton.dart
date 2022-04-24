@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
 
-class LargeButton extends StatelessWidget {
+class SmallButton extends StatelessWidget {
   String title;
   VoidCallback onPressed;
   Color color;
-  LargeButton(
+  SmallButton(
       {required this.title, required this.onPressed, required this.color});
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       child: Container(
-        height: 100,
-        width: 500,
+        height: 50,
+        width: 250,
         child: Center(
           child: Text(
             this.title,
-            style: Theme.of(context).textTheme.bodyMedium,
+            style: Theme.of(context).textTheme.displaySmall,
           ),
         ),
         decoration: BoxDecoration(
